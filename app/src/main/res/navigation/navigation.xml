@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/doListAddFragment">
+
+    <fragment
+        android:id="@+id/doListAddFragment"
+        android:name="com.volkankelleci.todoornotlist.Views.DoListAddFragment"
+        android:label="fragment_do_list_add"
+        tools:layout="@layout/fragment_do_list_add" >
+        <action
+            android:id="@+id/action_doListAddFragment_to_toDoFragment"
+            app:destination="@id/toDoFragment" />
+        <action
+            android:id="@+id/action_doListAddFragment_to_toDontFragment"
+            app:destination="@id/toDontFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toDontFragment"
+        android:name="com.volkankelleci.todoornotlist.Views.toDontFragment"
+        android:label="fragment_to_dont"
+        tools:layout="@layout/fragment_to_dont" />
+    <fragment
+        android:id="@+id/toDoFragment"
+        android:name="com.volkankelleci.todoornotlist.Views.toDoFragment"
+        android:label="fragment_to_do"
+        tools:layout="@layout/fragment_to_do" />
+</navigation>

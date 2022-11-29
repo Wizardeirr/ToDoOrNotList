@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home_button"
+        android:title="@string/home"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/home_icon"/>
+    <item
+        android:id="@+id/search_button"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/search_icon"/>
+    <item
+        android:id="@+id/do_button"
+        android:title="@string/to_do"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/do_icon"/>
+    <item
+        android:id="@+id/do_not_button"
+        android:title="@string/to_dont"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/not_icon"/>
+</menu>
